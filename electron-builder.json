@@ -11,6 +11,9 @@
     "backend/**/*",
     "package.json"
   ],
+  "asarUnpack": [
+    "backend/**/*"
+  ],
   "extraResources": [
     {
       "from": "python",

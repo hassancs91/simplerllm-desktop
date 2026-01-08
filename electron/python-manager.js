@@ -27,7 +27,8 @@ class PythonManager {
 
     getBackendPath() {
         if (app.isPackaged) {
-            return path.join(process.resourcesPath, 'app', 'backend', 'app.py');
+            // Backend is unpacked from asar to app.asar.unpacked
+            return path.join(process.resourcesPath, 'app.asar.unpacked', 'backend', 'app.py');
         } else {
             return path.join(__dirname, '..', 'backend', 'app.py');
         }
